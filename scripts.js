@@ -4,6 +4,6 @@ const url = "https://withpersona.com/verify?inquiry-template-id=itmpl_NxU5CMYGh7
 button = document.getElementById('fire');
 button.addEventListener('click', () => {
 console.log('Clicked and starting app...')
-fetch(`${url}`, {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({ refId})})
+fetch(`${url}`, {method: 'POST', headers: {'Content-Type': 'application/json', "Access-Control-Allow-Origin":"*","Access-Control-Expose-Headers":"*"}, body: JSON.stringify({ refId})})
 })
 
