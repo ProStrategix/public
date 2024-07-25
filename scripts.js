@@ -4,6 +4,6 @@ const url = "https://withpersona.com/verify?inquiry-template-id=itmpl_NxU5CMYGh7
 button = document.getElementById('fire');
 button.addEventListener('click', () => {
 console.log('Clicked and starting app...')
-fetch(`${url}`, {method: 'POST', headers: {'Content-Type': 'application/json', "Access-Control-Allow-Origin":"*","Access-Control-Expose-Headers":"*", 'referer': 'https://delightful-rock-0c3234e0f.5.azurestaticapps.net/', "Referrer-Policy": 'same-origin'}, body: JSON.stringify({ refId})})
+window.open(url, '_self');
 })
 
